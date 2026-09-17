@@ -36,10 +36,10 @@ export function Contact() {
     <Section id="contact">
       <Container>
         <SectionHeading
-          eyebrow="Contact"
-          title="Let's work together."
-          description="Have a project in mind? Send a few details and I'll get back to you soon."
-        />
+  eyebrow="Contact"
+  title="Let's work together."
+  description="Have a project in mind? Send a few details and I'll get back to you soon. Available for remote work with clients across Nigeria — including Lagos, Abeokuta, and beyond."
+/>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
           <motion.div

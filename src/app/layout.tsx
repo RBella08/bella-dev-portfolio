@@ -27,6 +27,18 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+   keywords: [
+    "web developer Nigeria",
+    "web developer Lagos",
+    "web developer Abeokuta",
+    "best web developer in Lagos",
+    "best web developer in Abeokuta",
+    "WordPress developer Nigeria",
+    "Elementor developer Nigeria",
+    "website designer Nigeria",
+    "ecommerce website developer Nigeria",
+    "web app developer Nigeria",
+  ],
   alternates: { canonical: "/" },
   verification: {
     google: "x7Fi4LAolHVm2BYjwb8wW4IoheMfWJ46PIFlV8-YCTs",
@@ -55,6 +67,8 @@ const personJsonLd = {
   url: siteUrl,
   email: siteConfig.email,
   sameAs: [siteConfig.github],
+  areaServed: ["Lagos, Nigeria", "Abeokuta, Nigeria", "Nigeria"],
+  knowsAbout: ["Web Development", "WordPress", "Elementor", "React", "Next.js"],
 };
 
 const websiteJsonLd = {

@@ -27,7 +27,7 @@ export function About() {
             <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-elevated">
               <div className="relative aspect-4/5">
                 <Image
-                  src="/images/profile/bella.jpeg"
+                  src="/images/profile/profile.jpg"
                   alt="Quadri Happiness Kilani"
                   fill
                   sizes="(min-width: 1024px) 320px, 60vw"

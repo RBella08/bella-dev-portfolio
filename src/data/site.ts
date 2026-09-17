@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Senior Web Developer",
   fullName: "Quadri Happiness Kilani",
   description:
-    "BellaDev is the portfolio of Quadri Happiness Kilani, a web developer building modern, responsive websites and web applications for businesses.",
+  "BellaDev is the portfolio of Quadri Happiness Kilani, a web developer based in Nigeria, building modern, responsive websites and web applications for businesses in Lagos, Abeokuta, and beyond.",
   url: "https://your-domain.com",
   email: "kilaniquadri8@gmail.com",
   phone: ["09136916014", "08131465903"],
