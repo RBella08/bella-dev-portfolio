@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://bella-dev-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   alternates: { canonical: "/" },
+  verification: {
+    google: "x7Fi4LAolHVm2BYjwb8wW4IoheMfWJ46PIFlV8-YCTs",
+  },
   openGraph: {
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.description,
