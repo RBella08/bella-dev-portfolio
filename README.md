@@ -34,3 +34,62 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# BellaDev — Portfolio
+
+Personal portfolio website for Quadri Happiness Kilani (BellaDev), a web developer building modern, responsive websites and web applications.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19 + TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- React Hook Form + Zod
+- Resend (contact form email)
+- next-themes (light/dark/system)
+- Deployed on Vercel
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
+
+## Environment Variables
+
+Copy `.env.example` to `.env.local` and fill in real values:
+
+```env
+RESEND_API_KEY=       # from resend.com → API Keys
+CONTACT_EMAIL=         # inbox that receives contact form messages
+NEXT_PUBLIC_SITE_URL=  # the site's real live URL
+```
+
+## Available Scripts
+
+- `npm run dev` — local development server
+- `npm run build` — production build
+- `npm run start` — run the production build locally
+- `npm run lint` — check for code errors/style issues
+
+## Adding or Editing a Project
+
+Edit `src/data/projects.ts`. Each entry needs a `slug`, `name`, `type`, `description`, `role`, `technologies`, `image`, and `liveUrl`. Adding a new entry automatically creates its homepage card, its `/work/[slug]` page, and its sitemap entry — no other file needs to change.
+
+To swap a screenshot, replace the file in `public/images/projects/` and update the `image` path if the filename changed.
+
+## Editing Site-Wide Content
+
+- Name, email, phone, GitHub, nav links → `src/data/site.ts`
+- Services → `src/data/services.ts`
+- Skills/technologies → `src/data/skills.ts`
+- Colors, fonts, spacing → `src/app/globals.css`
+
+## Deployment
+
+Hosted on Vercel, connected to the `main` branch. Every `git push` to `main` auto-deploys. Environment variables must also be set in Vercel's Project Settings → Environment Variables.
