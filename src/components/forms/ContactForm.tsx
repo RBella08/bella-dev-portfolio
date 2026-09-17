@@ -134,7 +134,7 @@ function Field({
 
 function inputClass(hasError: boolean) {
   return cn(
-    "w-full rounded-lg border bg-surface px-4 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/60",
+    "w-full rounded-lg border bg-surface px-4 py-2.5 text-base text-foreground outline-none transition-colors placeholder:text-muted-foreground/60",
     hasError ? "border-red-500/60 focus:border-red-500" : "border-border focus:border-accent"
   );
 }

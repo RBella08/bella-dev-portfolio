@@ -53,9 +53,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--color-background);
   background-image:
     radial-gradient(640px circle at 12% -10%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%),
