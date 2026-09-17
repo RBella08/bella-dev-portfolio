@@ -29,7 +29,7 @@ export default async function OpengraphImage() {
           Building websites businesses can rely on.
         </div>
         <div style={{ marginTop: 28, fontSize: 30, color: "#9a9aa6" }}>
-          {siteConfig.name} — {siteConfig.fullName}
+          {`${siteConfig.name} — ${siteConfig.fullName}`}
         </div>
       </div>
     ),
