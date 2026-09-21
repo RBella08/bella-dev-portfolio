@@ -3,17 +3,17 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #eef0f8;
-  --foreground: #14141f;
-  --muted-foreground: #5c5f72;
-  --border: #d8dcec;
+  --background: #eef3ff;
+  --foreground: #101828;
+  --muted-foreground: #526071;
+  --border: #dce3f5;
   --surface: #ffffff;
-  --surface-muted: #e4e7f3;
+  --surface-muted: #f8faff;
   --accent: #2563eb;
-  --accent-2: #6d28d9;
+  --accent-2: #7c3aed;
   --accent-foreground: #ffffff;
-  --shadow-elevated: 0 1px 1px rgba(20, 20, 31, 0.04), 0 2px 6px rgba(20, 20, 31, 0.05),
-    0 20px 44px -20px rgba(20, 20, 31, 0.2);
+  --shadow-elevated: 0 1px 1px rgba(16, 24, 40, 0.04), 0 2px 6px rgba(16, 24, 40, 0.05),
+    0 20px 44px -20px rgba(16, 24, 40, 0.2);
 }
 
 .dark {
@@ -60,8 +60,8 @@ body {
   overflow-x: hidden;
   background-color: var(--color-background);
   background-image:
-    radial-gradient(640px circle at 12% -10%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%),
-    radial-gradient(520px circle at 100% 0%, color-mix(in srgb, var(--accent-2) 7%, transparent), transparent 60%);
+    radial-gradient(640px circle at 12% -10%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 60%),
+    radial-gradient(520px circle at 100% 0%, color-mix(in srgb, var(--accent-2) 5%, transparent), transparent 60%);
   background-repeat: no-repeat;
   color: var(--color-foreground);
   font-family: var(--font-sans);

@@ -108,12 +108,7 @@ export default function RootLayout({
         </a>
 
         <MotionConfig reducedMotion="user">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
             <Navbar />
             {children}
             <Footer />

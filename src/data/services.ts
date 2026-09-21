@@ -15,6 +15,7 @@ export type Service = {
   description: string;
   icon: LucideIcon;
   featured?: boolean;
+  secondary?: boolean;
 };
 
 export const services: Service[] = [
@@ -62,4 +63,11 @@ export const services: Service[] = [
     description: "Ongoing updates, fixes, and improvements to keep a website running smoothly.",
     icon: Wrench,
   },
+  {
+  name: "Web App Development",
+  description:
+    "Web applications built around real workflows, from dashboards to full-featured platforms.",
+  icon: LayoutDashboard,
+  secondary: true,
+},
 ];

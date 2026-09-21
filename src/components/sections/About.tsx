@@ -17,24 +17,33 @@ export function About() {
 
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <motion.div
-            variants={slideInLeft}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
-            className="relative mx-auto w-full max-w-xs lg:mx-0"
-          >
-            <div aria-hidden="true" className="hero-glow-alt absolute inset-[-15%] -z-10 rounded-full blur-3xl" />
-            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-elevated">
-              <div className="relative aspect-4/5">
-                <Image
-                  src="/images/profile/profile.jpg"
-                  alt="Quadri Happiness Kilani"
-                  fill
-                  sizes="(min-width: 1024px) 320px, 60vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
+  variants={slideInLeft}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.4 }}
+  className="relative mx-auto w-full max-w-xs lg:mx-0"
+>
+  <div aria-hidden="true" className="hero-glow-alt absolute inset-[-15%] -z-10 rounded-full blur-3xl" />
+  <motion.div
+    aria-hidden="true"
+    initial={{ opacity: 0, rotate: 0 }}
+    whileInView={{ opacity: 1, rotate: -4 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.15, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+    className="absolute inset-3 -z-10 rounded-2xl border border-border bg-surface-muted"
+  />
+  <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-elevated">
+    <div className="relative aspect-4/5">
+      <Image
+        src="/images/profile/profile.jpg"
+        alt="Quadri Happiness Kilani"
+        fill
+        sizes="(min-width: 1024px) 320px, 60vw"
+        className="object-cover"
+      />
+    </div>
+  </div>
+  {/* the existing "BellaDev / Web Developer" badge below this stays exactly as-is */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8, y: 10 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}

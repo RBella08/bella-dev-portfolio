@@ -1,10 +1,10 @@
-export function GithubIcon({ size = 18, className }: { size?: number; className?: string }) {
+export function GithubIcon({ size = 18, color, className }: { size?: number; color?: string; className?: string }) {
   return (
     <svg
       viewBox="0 0 24 24"
       width={size}
       height={size}
-      fill="currentColor"
+      fill={color ?? "currentColor"}
       aria-hidden="true"
       className={className}
     >

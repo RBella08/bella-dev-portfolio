@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 
 const paddingMap = {
-  tight: "pt-10 pb-24 md:pt-14 md:pb-32",
-  normal: "py-24 md:py-32",
+  tight: "pt-10 pb-20 md:pt-14 md:pb-28",
+  normal: "py-20 md:py-28",
 };
 
 export function Section({

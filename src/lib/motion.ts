@@ -43,4 +43,13 @@ export const staggerContainer: Variants = {
   visible: { transition: { staggerChildren: 0.12 } },
 };
 
+// Hover-gesture primitives — pair with initial="rest" whileHover="hover"
+export const cardLift: Variants = { rest: { y: 0 }, hover: { y: -6 } };
+export const imageZoom: Variants = { rest: { scale: 1 }, hover: { scale: 1.06 } };
+export const fadeOverlay: Variants = { rest: { opacity: 0 }, hover: { opacity: 1 } };
+export const textShift: Variants = { rest: { x: 0 }, hover: { x: 3 } };
+export const iconNudge: Variants = { rest: { x: 0, y: 0 }, hover: { x: 2, y: -2 } };
+export const iconPop: Variants = { rest: { scale: 1, rotate: 0 }, hover: { scale: 1.1, rotate: -6 } };
+export const sweep: Variants = { rest: { x: "-120%" }, hover: { x: "120%" } };
+
 export const liftHover: Transition = { duration: 0.3, ease: [0.22, 1, 0.36, 1] };
